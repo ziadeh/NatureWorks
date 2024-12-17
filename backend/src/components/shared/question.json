@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_questions",
+  "info": {
+    "displayName": "question",
+    "icon": "landscape",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "choice": {
+      "displayName": "questionOption",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.question-option"
+    },
+    "question": {
+      "type": "string"
+    }
+  }
+}

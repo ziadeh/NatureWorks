@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_question_scores",
+  "info": {
+    "displayName": "questionScore",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::question.question"
+    },
+    "score": {
+      "type": "integer"
+    }
+  }
+}

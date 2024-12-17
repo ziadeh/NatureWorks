@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "startup_scores",
+  "info": {
+    "singularName": "startup-score",
+    "pluralName": "startup-scores",
+    "displayName": "Startup Score",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "finalScore": {
+      "type": "integer"
+    },
+    "localContestWinner": {
+      "type": "boolean",
+      "default": false
+    },
+    "startup": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::startup.startup",
+      "inversedBy": "startup_scores"
+    },
+    "step": {
+      "type": "enumeration",
+      "enum": [
+        "Local contest",
+        "Regional contest"
+      ]
+    },
+    "startup_assessments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::startup-assessment.startup-assessment",
+      "mappedBy": "startup_score"
+    },
+    "regionalContestWinner": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_question_options",
+  "info": {
+    "displayName": "questionOption",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "choice": {
+      "type": "string"
+    },
+    "selected": {
+      "type": "boolean"
+    }
+  }
+}

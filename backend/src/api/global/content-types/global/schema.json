@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "globals",
+  "info": {
+    "singularName": "global",
+    "pluralName": "globals",
+    "displayName": "Global",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "siteName": {
+      "type": "string"
+    },
+    "competitionLocalOpen": {
+      "type": "boolean"
+    },
+    "competitionRegionalOpen": {
+      "type": "boolean"
+    },
+    "openViewToJudges": {
+      "type": "boolean"
+    }
+  }
+}

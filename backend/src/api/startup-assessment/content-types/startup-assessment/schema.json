@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "startup_assessments",
+  "info": {
+    "singularName": "startup-assessment",
+    "pluralName": "startup-assessments",
+    "displayName": "Startup Assessment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "step": {
+      "type": "enumeration",
+      "enum": [
+        "Local contest",
+        "Regional contest"
+      ]
+    },
+    "startup": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::startup.startup",
+      "inversedBy": "startup_assessments"
+    },
+    "approved": {
+      "type": "boolean",
+      "default": false
+    },
+    "questionScore": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.question-score"
+    },
+    "lockedForm": {
+      "type": "boolean",
+      "default": true
+    },
+    "score": {
+      "type": "integer"
+    },
+    "judge": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "startup_assessments"
+    },
+    "startup_score": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::startup-score.startup-score",
+      "inversedBy": "startup_assessments"
+    }
+  }
+}

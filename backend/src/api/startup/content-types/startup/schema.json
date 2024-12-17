@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "startups",
+  "info": {
+    "singularName": "startup",
+    "pluralName": "startups",
+    "displayName": "Startup",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "startup_assessments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::startup-assessment.startup-assessment",
+      "mappedBy": "startup"
+    },
+    "startup_scores": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::startup-score.startup-score",
+      "mappedBy": "startup"
+    },
+    "region": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::region.region",
+      "inversedBy": "startups"
+    },
+    "entrepreneur": {
+      "type": "string"
+    }
+  }
+}
