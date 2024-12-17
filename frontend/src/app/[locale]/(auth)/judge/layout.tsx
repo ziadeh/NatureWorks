@@ -38,19 +38,38 @@ async function JudgeLayout({
       <RefetchPage />
       <div className="grid grid-cols-2 md:grid-cols-3 py-10 gap-5 md:gap-10 mb-10 items-center">
         <div className="">
-          <h1 className="text-xl font-semibold mb-5 ">
-            Entrepreneurship Champions
-          </h1>
+          <h1 className="text-xl font-semibold mb-5 ">NatureWorks</h1>
         </div>
         <div className="order-3 md:order-2 col-span-2 md:col-span-1">
-          <Link href="/">
-            <Image
-              src="/images/Partners.png"
-              width={1900}
-              height={248}
-              alt="Partners"
-            />
-          </Link>
+          <div className="grid grid-cols-3 items-center bg-white px-8 rounded-md">
+            <div>
+              <Image
+                src="/images/Kingdom-of-the-Netherlands.png"
+                width={200}
+                height={100}
+                alt=""
+                className="mx-auto"
+              />
+            </div>
+            <div>
+              <Image
+                src="/images/leaders_international_logo.jpg"
+                width={200}
+                height={100}
+                alt=""
+                className="mx-auto"
+              />
+            </div>
+            <div className="h-24">
+              <Image
+                src="/images/rscn-logo.png"
+                width={200}
+                height={100}
+                alt=""
+                className="mx-auto object-contain h-full"
+              />
+            </div>
+          </div>
         </div>
         <div className="flex justify-end items-center gap-4 order-2 md:order-3">
           <SwitchLanguage />
