@@ -43,22 +43,24 @@ function Hero() {
         <div className="col-span-12">
           <h1 className="bg-gradient-to-r from-orange-600 via-blue-500 to-yellow-400 inline-block text-transparent bg-clip-text max-w-screen-xl mx-auto text-center pb-2 mb-20 text-4xl font-extrabold leading-none tracking-tight md:text-5xl dark:text-white">
             <small className="block mb-4">NatureWorks:</small>
-            Promoting Sustainable Development in Jordan’s Eastern Badia Region
+            Promoting Sustainable Development in Jordan&rsquo;s Eastern Badia
+            Region
           </h1>
         </div>
         <div className="mr-auto place-self-center col-span-12 mx-auto lg:col-span-7 flex-1 px-0 lg:px-20">
           <p className="max-w-2xl mb-6 font-light text-black text-justify lg:mb-8  dark:text-gray-400">
-            The "NatureWorks" project is aimed at enhancing sustainable
-            development in Jordan's Eastern Badia region. Focused on
-            conservation, tourism, and community empowerment, the project
-            strengthens efforts to preserve biodiversity in the Al-Shumari and
-            Al-Dahek reserves. By addressing ecological challenges and promoting
-            sustainable tourism, it ensures lasting positive impacts on the
-            environment and local economies. The project also empowers local
-            communities, creating new opportunities for economic growth and job
-            creation. Ultimately, "NatureWorks" positions Jordan as a leading
-            ecotourism destination while protecting the region’s natural
-            heritage for future generations.
+            The &quot;NatureWorks&quot; project is aimed at enhancing
+            sustainable development in Jordan&apos;s Eastern Badia region.
+            Focused on conservation, tourism, and community empowerment, the
+            project strengthens efforts to preserve biodiversity in the
+            Al-Shumari and Al-Dahek reserves. By addressing ecological
+            challenges and promoting sustainable tourism, it ensures lasting
+            positive impacts on the environment and local economies. The project
+            also empowers local communities, creating new opportunities for
+            economic growth and job creation. Ultimately,
+            &quot;NatureWorks&quot; positions Jordan as a leading ecotourism
+            destination while protecting the region&apos;s natural heritage for
+            future generations.
           </p>
           <div>
             <SignInForm />
