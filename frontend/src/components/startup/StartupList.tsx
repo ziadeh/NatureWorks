@@ -223,7 +223,12 @@ function StartupList({
                     return (
                       <div key={sScore.id}>
                         <p>
-                          <small>{sScore.step}:</small>{" "}
+                          <small>
+                            {sScore.step === "Local contest"
+                              ? "December 18th"
+                              : "December 19th"}
+                            :
+                          </small>{" "}
                           <b
                             className={
                               (sScore.step === "Regional contest" &&
