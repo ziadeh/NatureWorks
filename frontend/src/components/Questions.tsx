@@ -114,7 +114,7 @@ function Questions({
         let newStep = decodeURIComponent(step);
         router.refresh();
         scrollToTop();
-        return `${newStep} for ${name} has been ${
+        return `${name} score has been ${
           assessmentId ? "updated" : "submitted"
         }.`;
       },
@@ -193,7 +193,11 @@ function Questions({
     <div>
       <div className="font-semibold text-lg md:text-2xl text-center mb-2 -mt-10 block md:hidden">
         <IconStar className="mx-auto " />
-        <p className="">{decodeURIComponent(step)}</p>
+        <p className="">
+          {decodeURIComponent(step) === "Local contest"
+            ? "December 18th"
+            : "December 19th"}
+        </p>
       </div>
       <div className="grid grid-cols-3 items-center sticky top-0 bg-white/80 z-10 p-2">
         <div className="flex gap-4 col-span-2 md:col-span-1">
