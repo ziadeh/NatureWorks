@@ -15,6 +15,7 @@ import { StartupT } from "@/types/strapi/Startup";
 import { GlobalAttributes } from "@/types/strapi/Global";
 import { useRouter, useSearchParams } from "next/navigation";
 import { StartupRegionFilter } from "./StartupRegionFilter";
+import { useLocale, useTranslations } from "next-intl";
 
 const _all = "all";
 
@@ -41,6 +42,7 @@ function StartupList({
   const [filter, setFilter] = useState<string>("all");
   const searchParams = useSearchParams();
   const filterByUrl = searchParams.get("region");
+  const locale = useLocale();
 
   function updateSelectedRegion(filterStartups: string): string {
     if (!filterStartups) return ""; // Returning an empty string if filterStartups is falsy
@@ -172,7 +174,7 @@ function StartupList({
                         ) : (
                           <IconEdit size={18} />
                         )}
-                        Local contest{" "}
+                        {locale === "en" ? "تقييم المتقدم" : "Scoring"}{" "}
                         {postAssessment?.step2?.score > -1 ? (
                           <p className="flex items-center gap-1">
                             (<IconStar size={14} />
@@ -204,7 +206,7 @@ function StartupList({
                         ) : (
                           <IconEdit size={18} />
                         )}
-                        Regional contest{" "}
+                        {locale === "en" ? "تقييم المتقدم" : "Scoring"}{" "}
                         {postAssessment?.step3?.score > -1 ? (
                           <p className="flex items-center gap-1">
                             (<IconStar size={14} />
