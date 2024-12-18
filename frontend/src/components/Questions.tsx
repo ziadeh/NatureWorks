@@ -218,7 +218,11 @@ function Questions({
         </div>
         <div className="hidden md:block font-semibold text-2xl text-center">
           <IconStar className="mx-auto " />
-          <p className="">{decodeURIComponent(step)}</p>
+          <p className="">
+            {decodeURIComponent(step) === "Local contest"
+              ? "December 18th"
+              : "December 19th"}
+          </p>
         </div>
         <div className="flex justify-end items-center">
           <div className="w-24 h-24 border border-zinc-50 bg-white flex flex-col justify-center items-center">
